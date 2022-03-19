@@ -1,6 +1,6 @@
 # LibChecker
 
-[![License](https://img.shields.io/github/license/jpbandroid/LibChecker?label=License)](https://choosealicense.com/licenses/apache-2.0/)
+[![License](https://img.shields.io/github/license/jpbandroid/LibChecker?label=License)](https://choosealicense.com/licenses/apache-2.0/)<br>
 *Fork of [zhaobozhen/LibChecker](https://github.com/zhaobozhen/LibChecker)*
 
 ## What's this?
