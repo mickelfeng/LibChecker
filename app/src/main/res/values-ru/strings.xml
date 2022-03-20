@@ -61,7 +61,7 @@
   <string name="about_info">Это приложение используется для просмотра сторонних библиотек, используемых приложениями на вашем устройстве.</string>
   <string name="toolbar_rate">Оценка</string>
   <string name="resource_declaration">Часть ресурсов в приложении поступает из: </string>
-  <string name="library_declaration">Вся информация о отмеченных библиотеках в LibChecker берется из документации для разработчиков или из репозитория кода SDK, которому он принадлежит. Если информация неверна, пожалуйста, обращайтесь: absinthe@absinthe.life</string>
+  <string name="library_declaration">Вся информация о отмеченных библиотеках в LibChecker берется из документации для разработчиков или из репозитория кода SDK, которому он принадлежит.</string>
 
   <!--  Settings  -->
   <string name="pref_group_normal">Общие</string>

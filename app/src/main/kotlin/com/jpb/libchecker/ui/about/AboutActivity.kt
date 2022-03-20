@@ -133,13 +133,11 @@ class AboutActivity : AbsAboutActivity() {
       add(Card(getStringByConfiguration(R.string.about_info)))
 
       add(Category("Developers"))
-      val developerUrl = if (hasInstallCoolApk) {
-        URLManager.COOLAPK_HOME_PAGE
-      } else {
+      val developerUrl =
         URLManager.GITHUB_PAGE
-      }
-      add(Contributor(R.drawable.pic_rabbit, Absinthe.ME, "Developer & Designer", developerUrl))
-      add(Contributor(R.drawable.pic_kali, "Goooler", "Code Tidy & Optimize", "https://github.com/Goooler"))
+      add(Contributor(R.drawable.pic_rabbit, Absinthe.ME, "Original Developer", developerUrl))
+      add(Contributor(R.drawable.pic_kali, "Goooler", "Original Developer", "https://github.com/Goooler"))
+      add(Contributor(R.drawable.jpb, "jpb", "Developer", "https://github.com/jpbandroid"))
       add(
         Contributor(
           R.drawable.ic_github,
@@ -170,24 +168,6 @@ class AboutActivity : AbsAboutActivity() {
         )
       }
 
-      add(Category("Other Works"))
-      addAll(
-        Absinthe.getAboutPageRecommendedApps(
-          this@AboutActivity,
-          BuildConfig.APPLICATION_ID
-        )
-      )
-
-      add(Category("Contribution"))
-      add(
-        Contributor(
-          0/*TODO*/,
-          "Telegram @tommynok",
-          "Russian & Ukrainian Translation",
-          "https://t.me/tommynok"
-        )
-      )
-
       val list = listOf(
         "https://www.iconfont.cn/",
         "https://lottiefiles.com/22122-fanimation",
@@ -197,7 +177,7 @@ class AboutActivity : AbsAboutActivity() {
         "https://lottiefiles.com/66818-holographic-radar",
         "https://chojugiga.com/2017/09/05/da4choju53_0031/"
       )
-      add(Category("Acknowledgement"))
+      add(Category("Acknowledgements"))
       add(
         Card(
           HtmlCompat.fromHtml(

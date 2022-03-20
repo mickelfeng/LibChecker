@@ -61,7 +61,7 @@
   <string name="about_info">Ця програма використовується для перегляду сторонніх бібліотек, котрі використовуються додатками на вашому пристрої.</string>
   <string name="toolbar_rate">Оцінка</string>
   <string name="resource_declaration">Частина ресурсів в додатку надходить з: </string>
-  <string name="library_declaration">Вся інформація про позначені бібліотеки в LibChecker береться з документації для розробників або зі сховищ коду SDK, якому він належить. Якщо інформація невірна, будь ласка, звертайтеся: absinthe@absinthe.life</string>
+  <string name="library_declaration">Вся інформація про позначені бібліотеки в LibChecker береться з документації для розробників або зі сховищ коду SDK, якому він належить.</string>
 
   <!--  Settings  -->
   <string name="pref_group_normal">Загальні</string>

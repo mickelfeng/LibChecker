@@ -61,7 +61,7 @@
   <string name="about_info">本应用用来查看设备上的应用使用到的第三方库的情况。</string>
   <string name="toolbar_rate">评分</string>
   <string name="resource_declaration">应用中的部分素材来自于： </string>
-  <string name="library_declaration">LibChecker 中的所有标记库信息均来自于其所属的 SDK 的开发文档或代码仓库，如果信息有有误，请联系：absinthe@absinthe.life</string>
+  <string name="library_declaration">LibChecker 中的所有标记库信息均来自于其所属的 SDK 的开发文档或代码仓库.</string>
 
   <!--  Settings  -->
   <string name="pref_group_normal">常规</string>

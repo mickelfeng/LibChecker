@@ -61,7 +61,7 @@
   <string name="about_info">This app is used to view the third-party libraries used by applications in your device.</string>
   <string name="toolbar_rate">Rate</string>
   <string name="resource_declaration">Part of the resources in the application comes from: </string>
-  <string name="library_declaration">All marked libraries information in LibChecker comes from the development documentation or code repository of the SDK to which it belongs. If the information is incorrect, please contact: absinthe@absinthe.life</string>
+  <string name="library_declaration">All marked libraries information in LibChecker comes from the development documentation or code repository of the SDK to which it belongs.</string>
 
   <!--  Settings  -->
   <string name="pref_group_normal">Normal</string>
@@ -167,7 +167,7 @@
   <string name="album_restore_summary">Restore snapshots from backup file</string>
   <string name="album_click_to_choose">Click to Choose</string>
   <string name="album_dialog_delete_snapshot_message">Processing…</string>
-
+libr
   <!--  Integration  -->
   <string name="integration_monkey_king_menu_block">Block it via \"MonkeyKing Purify\"</string>
   <string name="integration_monkey_king_menu_unblock">Unblock it via \"MonkeyKing Purify\"</string>
