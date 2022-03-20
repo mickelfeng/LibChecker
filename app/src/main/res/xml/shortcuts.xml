@@ -9,9 +9,9 @@
     android:shortcutShortLabel="@string/title_app_list">
 
     <intent
-      android:action="com.absinthe.libchecker.intent.action.START_APP_LIST"
-      android:targetClass="com.absinthe.libchecker.ui.main.MainActivity"
-      android:targetPackage="com.absinthe.libchecker" />
+      android:action="com.jpb.libchecker.intent.action.START_APP_LIST"
+      android:targetClass="com.jpb.libchecker.ui.main.MainActivity"
+      android:targetPackage="com.jpb.libchecker" />
   </shortcut>
 
   <shortcut
@@ -20,9 +20,9 @@
     android:shortcutShortLabel="@string/title_statistics">
 
     <intent
-      android:action="com.absinthe.libchecker.intent.action.START_STATISTICS"
-      android:targetClass="com.absinthe.libchecker.ui.main.MainActivity"
-      android:targetPackage="com.absinthe.libchecker" />
+      android:action="com.jpb.libchecker.intent.action.START_STATISTICS"
+      android:targetClass="com.jpb.libchecker.ui.main.MainActivity"
+      android:targetPackage="com.jpb.libchecker" />
   </shortcut>
 
   <shortcut
@@ -31,9 +31,9 @@
     android:shortcutShortLabel="@string/title_snapshot">
 
     <intent
-      android:action="com.absinthe.libchecker.intent.action.START_SNAPSHOT"
-      android:targetClass="com.absinthe.libchecker.ui.main.MainActivity"
-      android:targetPackage="com.absinthe.libchecker" />
+      android:action="com.jpb.libchecker.intent.action.START_SNAPSHOT"
+      android:targetClass="com.jpb.libchecker.ui.main.MainActivity"
+      android:targetPackage="com.jpb.libchecker" />
   </shortcut>
 
 </shortcuts>

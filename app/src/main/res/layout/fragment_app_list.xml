@@ -11,7 +11,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.absinthe.libchecker.view.applist.AppListLoadingView
+    <com.jpb.libchecker.view.applist.AppListLoadingView
       android:id="@+id/loading_view"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
@@ -29,7 +29,7 @@
       app:borderTopVisibility="whenTop"
       app:fitsSystemWindowsInsets="bottom|top" />
 
-    <com.absinthe.libchecker.view.applist.AppListInitialiseView
+    <com.jpb.libchecker.view.applist.AppListInitialiseView
       android:id="@+id/init_view"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"

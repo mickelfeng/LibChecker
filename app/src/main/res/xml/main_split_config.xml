@@ -10,34 +10,34 @@
     window:finishSecondaryWithPrimary="true"
     window:clearTop="true">
     <SplitPairFilter
-      window:primaryActivityName="com.absinthe.libchecker.ui.main.MainActivity"
-      window:secondaryActivityName="com.absinthe.libchecker.ui.detail.AppDetailActivity" />
+      window:primaryActivityName="com.jpb.libchecker.ui.main.MainActivity"
+      window:secondaryActivityName="com.jpb.libchecker.ui.detail.AppDetailActivity" />
     <SplitPairFilter
-      window:primaryActivityName="com.absinthe.libchecker.ui.main.MainActivity"
-      window:secondaryActivityName="com.absinthe.libchecker.ui.main.LibReferenceActivity" />
+      window:primaryActivityName="com.jpb.libchecker.ui.main.MainActivity"
+      window:secondaryActivityName="com.jpb.libchecker.ui.main.LibReferenceActivity" />
     <SplitPairFilter
-      window:primaryActivityName="com.absinthe.libchecker.ui.main.MainActivity"
-      window:secondaryActivityName="com.absinthe.libchecker.ui.main.ChartActivity" />
+      window:primaryActivityName="com.jpb.libchecker.ui.main.MainActivity"
+      window:secondaryActivityName="com.jpb.libchecker.ui.main.ChartActivity" />
     <SplitPairFilter
-      window:primaryActivityName="com.absinthe.libchecker.ui.main.MainActivity"
-      window:secondaryActivityName="com.absinthe.libchecker.ui.detail.SnapshotDetailActivity" />
+      window:primaryActivityName="com.jpb.libchecker.ui.main.MainActivity"
+      window:secondaryActivityName="com.jpb.libchecker.ui.detail.SnapshotDetailActivity" />
     <SplitPairFilter
-      window:primaryActivityName="com.absinthe.libchecker.ui.main.MainActivity"
-      window:secondaryActivityName="com.absinthe.libchecker.ui.about.AboutActivity" />
+      window:primaryActivityName="com.jpb.libchecker.ui.main.MainActivity"
+      window:secondaryActivityName="com.jpb.libchecker.ui.about.AboutActivity" />
 
     <SplitPairFilter
-      window:primaryActivityName="com.absinthe.libchecker.ui.main.LibReferenceActivity"
-      window:secondaryActivityName="com.absinthe.libchecker.ui.detail.AppDetailActivity" />
+      window:primaryActivityName="com.jpb.libchecker.ui.main.LibReferenceActivity"
+      window:secondaryActivityName="com.jpb.libchecker.ui.detail.AppDetailActivity" />
     <SplitPairFilter
-      window:primaryActivityName="com.absinthe.libchecker.ui.detail.SnapshotDetailActivity"
-      window:secondaryActivityName="com.absinthe.libchecker.ui.detail.AppDetailActivity" />
+      window:primaryActivityName="com.jpb.libchecker.ui.detail.SnapshotDetailActivity"
+      window:secondaryActivityName="com.jpb.libchecker.ui.detail.AppDetailActivity" />
 
     <SplitPairFilter
-      window:primaryActivityName="com.absinthe.libchecker.ui.snapshot.AlbumActivity"
-      window:secondaryActivityName="com.absinthe.libchecker.ui.album.BackupActivity" />
+      window:primaryActivityName="com.jpb.libchecker.ui.snapshot.AlbumActivity"
+      window:secondaryActivityName="com.jpb.libchecker.ui.album.BackupActivity" />
     <SplitPairFilter
-      window:primaryActivityName="com.absinthe.libchecker.ui.snapshot.AlbumActivity"
-      window:secondaryActivityName="com.absinthe.libchecker.ui.album.TrackActivity" />
+      window:primaryActivityName="com.jpb.libchecker.ui.snapshot.AlbumActivity"
+      window:secondaryActivityName="com.jpb.libchecker.ui.album.TrackActivity" />
   </SplitPairRule>
 
 </resources>

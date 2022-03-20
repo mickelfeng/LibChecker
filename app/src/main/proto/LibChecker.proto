@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package protocol;
 
-option java_package = "com.absinthe.libchecker.protocol";
+option java_package = "com.jpb.libchecker.protocol";
 option java_outer_classname = "LibCheckerProtocol";
 option java_multiple_files = true;
 

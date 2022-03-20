@@ -12,8 +12,8 @@ This app is used to view the third-party libraries used by applications in your 
 [LibChecker-Docs](https://github.com/zhaobozhen/LibChecker-Docs)
 
 ## Download
-[<img src="/source/coolapk-badge.png" width="323" height="125" />](https://www.coolapk.com/apk/com.absinthe.libchecker)
-[<img src="/source/google-play-badge.png" width="323" height="125" />](https://play.google.com/store/apps/details?id=com.absinthe.libchecker)
+[<img src="/source/coolapk-badge.png" width="323" height="125" />](https://www.coolapk.com/apk/com.jpb.libchecker)
+[<img src="/source/google-play-badge.png" width="323" height="125" />](https://play.google.com/store/apps/details?id=com.jpb.libchecker)
 
 ## Discussions
 [Github Discussions](https://github.com/zhaobozhen/LibChecker/discussions)
