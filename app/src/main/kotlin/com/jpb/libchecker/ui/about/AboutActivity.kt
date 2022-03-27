@@ -33,6 +33,7 @@ import com.drakeet.about.Card
 import com.drakeet.about.Category
 import com.drakeet.about.Contributor
 import com.drakeet.about.License
+import com.jpb.libchecker.ui.oss.licenses.OSSLicense
 import com.jpb.libchecker.utils.extensions.getColor
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
@@ -147,27 +148,6 @@ class AboutActivity : AbsAboutActivity() {
         )
       )
 
-      if (Locale.getDefault() == Locale.CHINA) {
-        add(Category("Help Each Other"))
-        add(
-          Card(
-            """
-              （帮转）
-              很抱歉有个事需要大家帮忙。
-              求推荐一个心理咨询师/治疗师，有以下要求：
-              •在北京地区可面对面咨询
-              •认知行为疗法（CBT）取向或偏向于CBT的整合取向
-              •最好有海外的心理学硕士及以上学历
-              •持有中国心理学会注册心理师执照或海外的相关执照
-              •有长期的督导
-              •良好的伦理操守
-              如您认识有符合以上要求的心理咨询师/治疗师，请通过邮箱：temp1@linesoft.top与我联系（广告、骗子、其他事宜勿扰）
-              特别感谢！
-            """.trimIndent()
-          )
-        )
-      }
-
       val list = listOf(
         "https://www.iconfont.cn/",
         "https://lottiefiles.com/22122-fanimation",
@@ -189,184 +169,6 @@ class AboutActivity : AbsAboutActivity() {
 
       add(Category("Declaration"))
       add(Card(getStringByConfiguration(R.string.library_declaration)))
-
-      add(Category("Open Source Licenses"))
-      add(
-        License(
-          "kotlin",
-          "JetBrains",
-          License.APACHE_2,
-          "https://github.com/JetBrains/kotlin"
-        )
-      )
-      add(
-        License(
-          "MultiType",
-          "drakeet",
-          License.APACHE_2,
-          "https://github.com/drakeet/MultiType"
-        )
-      )
-      add(
-        License(
-          "about-page",
-          "drakeet",
-          License.APACHE_2,
-          "https://github.com/drakeet/about-page"
-        )
-      )
-      add(
-        License(
-          "AndroidX",
-          "Google",
-          License.APACHE_2,
-          "https://source.google.com"
-        )
-      )
-      add(
-        License(
-          "Android Jetpack",
-          "Google",
-          License.APACHE_2,
-          "https://source.google.com"
-        )
-      )
-      add(
-        License(
-          "protobuf",
-          "Google",
-          License.APACHE_2,
-          "https://github.com/protocolbuffers/protobuf"
-        )
-      )
-      add(
-        License(
-          "material-components-android",
-          "Google",
-          License.APACHE_2,
-          "https://github.com/material-components/material-components-android"
-        )
-      )
-      add(
-        License(
-          "RikkaX",
-          "RikkaApps",
-          License.MIT,
-          "https://github.com/RikkaApps/RikkaX"
-        )
-      )
-      add(
-        License(
-          "HiddenApiRefinePlugin",
-          "RikkaApps",
-          License.MIT,
-          "https://github.com/RikkaApps/HiddenApiRefinePlugin"
-        )
-      )
-      add(
-        License(
-          "lottie-android",
-          "Airbnb",
-          License.APACHE_2,
-          "https://github.com/airbnb/lottie-android"
-        )
-      )
-      add(
-        License(
-          "MPAndroidChart",
-          "PhilJay",
-          License.APACHE_2,
-          "https://github.com/PhilJay/MPAndroidChart"
-        )
-      )
-      add(
-        License(
-          "Once",
-          "jonfinerty",
-          License.APACHE_2,
-          "https://github.com/jonfinerty/Once"
-        )
-      )
-      add(
-        License(
-          "BaseRecyclerViewAdapterHelper",
-          "CymChad",
-          License.MIT,
-          "https://github.com/CymChad/BaseRecyclerViewAdapterHelper"
-        )
-      )
-      add(
-        License(
-          "OkHttp",
-          "Square",
-          License.APACHE_2,
-          "https://github.com/square/okhttp"
-        )
-      )
-      add(
-        License(
-          "Retrofit",
-          "Square",
-          License.APACHE_2,
-          "https://github.com/square/retrofit"
-        )
-      )
-      add(
-        License(
-          "Moshi",
-          "Square",
-          License.APACHE_2,
-          "https://github.com/square/moshi"
-        )
-      )
-      add(
-        License(
-          "dexlib2",
-          "JesusFreke",
-          License.APACHE_2,
-          "https://github.com/JesusFreke/smali"
-        )
-      )
-      add(
-        License(
-          "coil",
-          "coil-kt",
-          License.APACHE_2,
-          "https://github.com/coil-kt/coil"
-        )
-      )
-      add(
-        License(
-          "AndroidFastScroll",
-          "zhanghai",
-          License.APACHE_2,
-          "https://github.com/zhanghai/AndroidFastScroll"
-        )
-      )
-      add(
-        License(
-          "AppIconLoader",
-          "zhanghai",
-          License.APACHE_2,
-          "https://github.com/zhanghai/AppIconLoader"
-        )
-      )
-      add(
-        License(
-          "LSPosed",
-          "LSPosed",
-          License.GPL_V3,
-          "https://github.com/LSPosed/LSPosed"
-        )
-      )
-      add(
-        License(
-          "AndroidHiddenApiBypass",
-          "LSPosed",
-          License.APACHE_2,
-          "https://github.com/LSPosed/AndroidHiddenApiBypass"
-        )
-      )
     }
   }
 
@@ -378,14 +180,11 @@ class AboutActivity : AbsAboutActivity() {
   override fun onOptionsItemSelected(menuItem: MenuItem): Boolean {
     if (menuItem.itemId == R.id.toolbar_rate) {
       try {
-        startActivity(
-          Intent(Intent.ACTION_VIEW)
-            .setData(URLManager.MARKET_PAGE.toUri())
-            .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-        )
+        val intent = Intent(this, OSSLicense::class.java)
+        startActivity(intent)
       } catch (e: ActivityNotFoundException) {
         Timber.e(e)
-        showLongToast(R.string.toast_not_existing_market)
+        showLongToast("not working!")
       }
     }
     return super.onOptionsItemSelected(menuItem)

@@ -3,7 +3,7 @@
 
   <item
     android:id="@+id/toolbar_rate"
-    android:icon="@drawable/ic_favorite_white"
+    android:icon="@drawable/ic_fluent_receipt_24_regular"
     android:title="@string/toolbar_rate"
     app:showAsAction="always" />
 

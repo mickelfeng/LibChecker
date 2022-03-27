@@ -59,7 +59,7 @@
   <string name="settings_rate_us_summary">這可以使我們被更多的人發現</string>
   <string name="settings_about_summary">這裡是 LibChecker!</string>
   <string name="about_info">本應用程式用來查看設備上的應用使用到的第三方庫的情況。</string>
-  <string name="toolbar_rate">評分</string>
+  <string name="toolbar_rate">開源許可證</string>
   <string name="resource_declaration">應用程式中的部分素材來自於： </string>
   <string name="library_declaration">LibChecker 中的所有標記庫訊息均來自於其所屬的 SDK 的開發文件或代碼倉庫.</string>
 

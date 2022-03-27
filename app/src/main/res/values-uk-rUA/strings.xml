@@ -59,7 +59,7 @@
   <string name="settings_rate_us_summary">Це може зробити нас доступнішим для більшого числа людей</string>
   <string name="settings_about_summary">Це LibChecker!</string>
   <string name="about_info">Ця програма використовується для перегляду сторонніх бібліотек, котрі використовуються додатками на вашому пристрої.</string>
-  <string name="toolbar_rate">Оцінка</string>
+  <string name="toolbar_rate">Ліцензії з відкритим кодом</string>
   <string name="resource_declaration">Частина ресурсів в додатку надходить з: </string>
   <string name="library_declaration">Вся інформація про позначені бібліотеки в LibChecker береться з документації для розробників або зі сховищ коду SDK, якому він належить.</string>
 

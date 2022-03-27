@@ -20,6 +20,7 @@ kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref =
 kotlinter = { id = "org.jmailen.kotlinter", version = "3.9.0" }
 ksp = { id = "com.google.devtools.ksp", version = "1.6.10-1.0.4" }
 protobuf = { id = "com.google.protobuf", version = "0.8.18" }
+aboutlib = { id = "com.mikepenz.aboutlibraries.plugin", version = "10.0.0"}
 
 [libraries]
 gradlePlugin-android = { module = "com.android.tools.build:gradle", version.ref = "agp" }

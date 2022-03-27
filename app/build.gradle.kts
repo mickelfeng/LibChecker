@@ -14,6 +14,7 @@ plugins {
   alias(libs.plugins.protobuf)
   alias(libs.plugins.hiddenApiRefine)
   alias(libs.plugins.ksp)
+  alias(libs.plugins.aboutlib)
 }
 
 ksp {
@@ -98,6 +99,13 @@ configurations.all {
 }
 
 dependencies {
+  implementation("androidx.compose.ui:ui:1.1.1")
+  implementation("androidx.compose.material:material:1.1.1")
+  implementation("androidx.compose.ui:ui-tooling-preview:1.1.1")
+  implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.4.1")
+  implementation("androidx.activity:activity-compose:1.4.0")
+  implementation("androidx.startup:startup-runtime:1.1.1")
+  androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.1.1")
   compileOnly(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar", "*.aar"))))
   compileOnly(fileTree("ohos"))
   compileOnly(projects.hiddenApi)
@@ -125,6 +133,9 @@ dependencies {
   implementation(libs.bundles.grpc)
   implementation(libs.rikka.refine.runtime)
   implementation(libs.bundles.zhaobozhen)
+  implementation ("com.google.accompanist:accompanist-insets-ui:0.23.1")
+  implementation ("com.google.accompanist:accompanist-systemuicontroller:0.23.1")
+  debugImplementation("androidx.compose.ui:ui-tooling:1.1.1")
 
   ksp(libs.androidX.room.compiler)
   ksp(libs.square.moshi.compiler)
@@ -142,10 +153,37 @@ dependencies {
   implementation(libs.appIconLoader)
   implementation(libs.hiddenApiBypass)
   implementation(libs.dexLib2)
-
+  implementation("com.mikepenz:aboutlibraries-core:10.0.0")
+  implementation("com.mikepenz:aboutlibraries-compose:10.0.0")
+  implementation("com.github.javiersantos:AppUpdater:2.7")
   implementation(libs.bundles.rikkax)
 
   debugImplementation(libs.square.leakCanary)
+}
+android {
+  compileOptions {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+  }
+  kotlinOptions {
+    jvmTarget = "11"
+  }
+  buildFeatures {
+    compose = true
+  }
+  composeOptions {
+    kotlinCompilerExtensionVersion = "1.1.1"
+  }
+  defaultConfig {
+    vectorDrawables {
+      useSupportLibrary = true
+    }
+  }
+  packagingOptions {
+    resources {
+      excludes += "/META-INF/{AL2.0,LGPL2.1}"
+    }
+  }
 }
 
 protobuf {
