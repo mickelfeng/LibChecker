@@ -7,7 +7,8 @@ import org.gradle.api.plugins.ExtensionAware
 import org.jetbrains.kotlin.gradle.dsl.KotlinJvmOptions
 import java.nio.charset.Charset
 
-const val baseVersionName = "2.2.1"
+const val baseVersionName = "2.2.2"
+val verName: String by lazy { "${baseVersionName}_jpb.${"git rev-parse --short HEAD".exec()}" }
 
 fun Project.setupLibraryModule(block: LibraryExtension.() -> Unit = {}) {
   setupBaseModule(block)
@@ -16,8 +17,8 @@ fun Project.setupLibraryModule(block: LibraryExtension.() -> Unit = {}) {
 fun Project.setupAppModule(block: BaseAppModuleExtension.() -> Unit = {}) {
   setupBaseModule<BaseAppModuleExtension> {
     defaultConfig {
-      versionCode = 221
-      versionName = "2.2.1_jpb"
+      versionCode = 222
+      versionName = verName
       resourceConfigurations += arrayOf("en", "zh-rCN", "zh-rTW", "ru", "uk-rUA")
     }
     buildTypes {

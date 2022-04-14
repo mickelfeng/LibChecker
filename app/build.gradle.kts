@@ -52,7 +52,7 @@ setupAppModule {
   applicationVariants.all {
     outputs.all {
       (this as? ApkVariantOutputImpl)?.outputFileName =
-        "LibChecker-2.2.1-jpb.apk"
+        "LibChecker-${verName}-jpb-${name}.apk"
     }
   }
 }
