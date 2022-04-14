@@ -153,8 +153,8 @@ dependencies {
   implementation(libs.appIconLoader)
   implementation(libs.hiddenApiBypass)
   implementation(libs.dexLib2)
-  implementation("com.mikepenz:aboutlibraries-core:10.0.0")
-  implementation("com.mikepenz:aboutlibraries-compose:10.0.0")
+  implementation("com.mikepenz:aboutlibraries-core:10.1.0")
+  implementation("com.mikepenz:aboutlibraries-compose:10.1.0")
   implementation("com.github.javiersantos:AppUpdater:2.7")
   implementation(libs.bundles.rikkax)
 

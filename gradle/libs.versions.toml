@@ -3,10 +3,10 @@ agp = "7.1.3"
 androidX-lifecycle = "2.4.1"
 androidX-room = "2.4.2"
 appCenter = "4.4.2"
-grpc = "1.45.0"
-hiddenApiRefine = "3.0.3"
-kotlin = "1.6.10"
-protoc = "3.19.4"
+grpc = "1.45.1"
+hiddenApiRefine = "3.1.1"
+kotlin = "1.6.20"
+protoc = "3.20.0"
 square-moshi = "1.13.0"
 square-retrofit = "2.9.0"
 zhaobozhen = "1.0.4"
@@ -18,7 +18,7 @@ hiddenApiRefine = { id = "dev.rikka.tools.refine.gradle-plugin", version.ref = "
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }
 kotlinter = { id = "org.jmailen.kotlinter", version = "3.9.0" }
-ksp = { id = "com.google.devtools.ksp", version = "1.6.10-1.0.4" }
+ksp = { id = "com.google.devtools.ksp", version = "1.6.20-1.0.4" }
 protobuf = { id = "com.google.protobuf", version = "0.8.18" }
 aboutlib = { id = "com.mikepenz.aboutlibraries.plugin", version = "10.0.0"}
 
@@ -26,7 +26,7 @@ aboutlib = { id = "com.mikepenz.aboutlibraries.plugin", version = "10.0.0"}
 gradlePlugin-android = { module = "com.android.tools.build:gradle", version.ref = "agp" }
 gradlePlugin-kotlin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
 
-kotlinX-coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0"
+kotlinX-coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1"
 
 androidX-activity = "androidx.activity:activity-ktx:1.4.0"
 androidX-annotation = "androidx.annotation:annotation:1.3.0"
