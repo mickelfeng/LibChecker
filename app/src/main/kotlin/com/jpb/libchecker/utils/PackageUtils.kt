@@ -1011,13 +1011,14 @@ object PackageUtils {
   private const val AGP_KEYWORD2 = "Created-By: Android Gradle "
 
   fun getAGPVersion(packageInfo: PackageInfo): String? {
-    ZipFile(File(packageInfo.applicationInfo.sourceDir)).use { zipFile ->
-      zipFile.getEntry("META-INF/com/android/build/gradle/app-metadata.properties")?.let { ze ->
-        Properties().apply {
-          load(zipFile.getInputStream(ze))
-          getProperty(AGP_KEYWORD)?.let {
-            return it
-          }
+    runCatching {
+      ZipFile(File(packageInfo.applicationInfo.sourceDir)).use { zipFile ->
+        zipFile.getEntry("META-INF/com/android/build/gradle/app-metadata.properties")?.let { ze ->
+          Properties().apply {
+            load(zipFile.getInputStream(ze))
+            getProperty(AGP_KEYWORD)?.let {
+              return it
+            }
         }
       }
       zipFile.getEntry("META-INF/MANIFEST.MF")?.let { ze ->
@@ -1046,9 +1047,9 @@ object PackageUtils {
     return null
   }
 
-  private val runtime by lazy { Runtime.getRuntime() }
+  val runtime by lazy { Runtime.getRuntime() }
 
-  private fun getAppListByShell(): List<String> {
+  fun getAppListByShell(): List<String> {
     try {
       val pmList = mutableListOf<String>()
       val process = runtime.exec("pm list packages")
@@ -1134,5 +1135,5 @@ object PackageUtils {
   fun PackageInfo.isPWA(): Boolean {
     return applicationInfo.metaData?.keySet()
       ?.any { it.startsWith("org.chromium.webapk.shell_apk") } == true
-  }
-}
+  }}}
+

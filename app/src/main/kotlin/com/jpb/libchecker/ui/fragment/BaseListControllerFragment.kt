@@ -52,17 +52,8 @@ abstract class BaseListControllerFragment<T : ViewBinding> : BaseFragment<T>(), 
   override fun isAllowRefreshing(): Boolean = allowRefreshing
 
   protected fun isListCanScroll(listSize: Int): Boolean {
-    getSuitableLayoutManager().apply {
-      if (this is LinearLayoutManager) {
-        return findFirstVisibleItemPosition() > 0 || findLastVisibleItemPosition() < listSize - 1
-      } else if (this is StaggeredGridLayoutManager) {
-        val firstLine = IntArray(4)
-        findFirstVisibleItemPositions(firstLine)
-        val lastLine = IntArray(4)
-        findLastVisibleItemPositions(lastLine)
-        return firstLine[0] > 0 || lastLine.last() < listSize - 1
-      }
+    if (context == null) {
+      return false
     }
-    return false
-  }
-}
+    return true
+}}
